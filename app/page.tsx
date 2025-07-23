@@ -9,7 +9,7 @@ import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
 
-export function Page() {
+export default function Page() {
   const [contactOpen, setContactOpen] = useState(false);
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-tr from-violet-900 via-indigo-800 to-cyan-700 text-white overflow-x-hidden">
@@ -35,5 +35,3 @@ export function Page() {
     </div>
   );
 }
-
-export { Page as default };
